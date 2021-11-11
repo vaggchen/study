@@ -1,0 +1,41 @@
+.outDiv {
+  background: #000;
+  width: 100px;
+  height: 50px;
+}
+.inDiv {
+  background: #ff0000;
+}
+
+.outterBox1 {
+  text-align: center;
+}
+.innerBox1 {
+  display: inline-block;
+}
+
+.outterBox2 {
+}
+.innerBox2 {
+  display: table;
+  margin: 0 auto;
+}
+
+.outterBox3 {
+  position: relative;
+}
+.innerBox3 {
+  position: absolute;
+  left: 50%;
+  /* 相对于自身 */
+  transform: translateX(-50%);
+}
+
+.outterBox4 {
+  display: flex;
+  justify-content: center;
+  /* 这一句是因为flex默认垂直方向拉伸布局(align-items: stretch) */
+  align-items: flex-start;
+}
+.innerBox4 {
+}
