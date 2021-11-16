@@ -1,3 +1,4 @@
+/* 前置设置或者公用样式 */
 .outDiv {
   background: #000;
   width: 50px;
@@ -7,6 +8,7 @@
   background: #ff0000;
 }
 
+/* 1.table-cell + vertical-align */
 .outterBox1 {
   display: table-cell;
   vertical-align: middle;
@@ -14,6 +16,7 @@
 .innerBox1 {
 }
 
+/* 2.absolute + transform */
 .outterBox2 {
   position: relative;
 }
@@ -24,6 +27,7 @@
   transform: translateY(-50%);
 }
 
+/* 3.flex + align-items */
 .outterBox3 {
   display: flex;
   /* 这一句是因为flex默认垂直方向拉伸布局(align-items: stretch) */

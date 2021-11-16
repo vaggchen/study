@@ -1,0 +1,62 @@
+/* 前置设置或者公用样式 */
+.outDiv {
+  width: 100px;
+  margin-bottom: 10px;
+  background: #ddd;
+}
+
+p {
+  background: #666;
+}
+.right p {
+  background: #999;
+}
+
+/* 1.float + margin */
+.left1 {
+  float: left;
+  width: 30px;
+}
+
+.right1 {
+  margin-left: 40px;
+}
+
+/* 2.float + overflow */
+.left2 {
+  float: left;
+  width: 30px;
+  margin-right: 10px; /* 和上面那个左间距不一样，不用超出盒子宽度 */
+}
+
+.right2 {
+  overflow: hidden;
+}
+
+/* 3.table + table-layout */
+.outDiv3 {
+  display: table;
+  table-layout: fixed;
+}
+.left3,
+.right3 {
+  display: table-cell;
+}
+
+.left3 {
+  width: 30px;
+  padding-right: 10px;
+}
+
+/* 4.flex */
+.outDiv4 {
+  display: flex;
+}
+
+.left4 {
+  width: 30px;
+  margin-right: 10px;
+}
+.right4 {
+  flex: 1;
+}

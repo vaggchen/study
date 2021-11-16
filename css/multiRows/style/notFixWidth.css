@@ -1,0 +1,52 @@
+/* 前置设置或者公用样式 */
+.outDiv {
+  width: 100px;
+  margin-bottom: 10px;
+  background: #ddd;
+}
+
+p {
+  background: #666;
+}
+.right p {
+  background: #999;
+}
+
+/* 1.float + overflow */
+.left1 {
+  float: left;
+  margin-right: 10px;
+}
+
+.right1 {
+  overflow: hidden;
+}
+
+/* 2.table */
+.outDiv2 {
+  display: table;
+}
+.left2,
+.right2 {
+  display: table-cell;
+}
+.left2 {
+  width: 0.1%;
+  padding-right: 10px;
+}
+/* 如果打开这个，可以使得left2的宽度随内容的多少而改变 */
+/* .left2 p {
+  width: 30px;
+} */
+
+/* 3.flex */
+.outDiv3 {
+  display: flex;
+}
+
+.left3 {
+  margin-right: 10px;
+}
+.right3 {
+  flex: 1;
+}

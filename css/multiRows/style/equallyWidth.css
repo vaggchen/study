@@ -1,0 +1,48 @@
+/* 前置设置或者公用样式 */
+.outDiv {
+  /* width: 300px; */ /*这一句打开有惊喜*/
+  margin-bottom: 10px;
+  background: #ddd;
+}
+
+p {
+  background: #666;
+}
+
+/* 1.float*/
+.outDiv1 {
+  margin-left: -20px;
+  overflow: hidden; /*清除浮动*/
+}
+.outDiv1 .column {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+/* 2.table */
+.outDiv-fix {
+  margin-left: -20px;
+}
+.outDiv2 {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.outDiv2 .column {
+  display: table-cell;
+  padding-left: 20px;
+}
+
+/* 3.flex */
+.outDiv3 {
+  display: flex;
+}
+
+.outDiv3 .column {
+  flex: 1;
+}
+.outDiv3 .column + .column {
+  margin-left: 20px;
+}
